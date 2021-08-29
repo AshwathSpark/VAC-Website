@@ -1,5 +1,6 @@
 import React from "react"
 import Image from "gatsby-image"
+import image from "../../events/substance.jpeg";
 
 const SingleEvent = ({
   poster,
@@ -13,11 +14,12 @@ const SingleEvent = ({
       <div className="event">
         <div className="event-poster">
           <div className="poster-img">
-            <Image className="gray-scale" fluid={poster} alt={posterTitle} />
+            {/* <Image className="gray-scale" fluid={poster} alt={posterTitle} /> */}
+            <img src={image} className="gray-scale" style={{width:'500px',height:'500px'}} alt="event" />
           </div>
         </div>
         <div className="event-details">
-          <h3 className="event-name">{eventName}</h3>
+          <h3 className="event-name">Intro to Premiere Pro</h3>
           <h4 className="event-date">
             <span className="date-svg">
               <svg
@@ -33,15 +35,19 @@ const SingleEvent = ({
                 />
               </svg>
             </span>
-            <span className="date">{eventDate}</span>
+            <span className="date"> 29/08/2021 : 4:30 PM - 6:30 PM</span>
           </h4>
           <div
             className="event-desc"
-            dangerouslySetInnerHTML={{ __html: eventDesc }}
-          ></div>
-        </div>
+          >Vivifying images and 3D models with the help of textures, vector graphics, edited noise and tweakable materials give complexity and detail to any animated sequence. All of these factors are important to retain the viewer's attention till the very end of your animated masterpiece. Have you ever wondered how the golden idol in the Temple Run game was designed? Do you also yearn to make such spectacular and incredible textures? To give you all a deeper insight on 'texturing', VIT Animation Club presents to you an event on the fundamentals of the software tool "Substance Painter". Substance Painter is a widely used texturing tool in the animation industry. 
+          <br/><br/>
+          <a href="https://meet.google.com/gnd-sgqu-bob">Meeting Link</a> <br/>
+          <a href="https://www.facebook.com/154884601259238/posts/4327131110701212/">Facebook</a><br/>
+          <a href="https://www.instagram.com/p/CTB03xMKrzg/?utm_medium=copy_link">Instagram</a><br/>
+        </div><br/><br/>
         <hr />
       </div>
+    </div>
     </>
   )
 }

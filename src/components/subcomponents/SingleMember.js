@@ -8,7 +8,8 @@ const SingleMember = ({ image, name, post, regNo, branch }) => {
         <h3>{regNo}</h3>
         <h3>{branch}</h3>
       </div>
-      <Image fluid={image} alt={name} />
+      {/* <Image fluid={image} alt={name} /> */}
+      <img src="require('../src/team/' + this.props.image + '.png')" alt="team"/>
       <div className="member-info">
         <h3>{name}</h3>
         <h4>{post}</h4>

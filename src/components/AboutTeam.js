@@ -36,6 +36,8 @@ const AboutTeam = () => {
     }
   `)
 
+  // const image = ["Ashwath","Arohan","aadhithyaa"];
+
   const members = image.allContentfulTeamMember.nodes
   members.reverse()
 
