@@ -23,9 +23,6 @@ const AboutTeam = () => {
       allContentfulTeamMember {
         nodes {
           name
-          post
-          regNo
-          degree
           memberImage {
             fluid {
               ...GatsbyContentfulFluid
@@ -38,7 +35,8 @@ const AboutTeam = () => {
 
   // const v1 = ["Ashwath","Arohan","Aadhithyaa"];
   // const v2 = ["team/ashwath.png","team/ashwath.png","team/ashwath.png"];
-  const v3 = [["Arohan Mishra","team/arohan.png"], ["Aadithyaa G","team/aadhithyaa.png"], ["Vaishnavi","team/vaishnavi.png"], ["Aadithyaa G","team/aadhithyaa.png"], ["Arohan Mishra","team/arohan.png"], ["Aadithyaa G","team/aadhithyaa.png"], ["Arohan Mishra","team/arohan.png"], ["Aadithyaa G","team/aadhithyaa.png"], ["Arohan Mishra","team/arohan.png"], ["Aadithyaa G","team/aadhithyaa.png"], ["Arohan Mishra","team/arohan.png"]];
+  const v3 = [["Arohan Mishra","../../team/arohan.png"], ["Aadithyaa G","../../team/aadhithyaa.png"]];
+  // , ["Vaishnavi","team/vaishnavi.png"], ["Aadithyaa G","team/aadhithyaa.png"], ["Arohan Mishra","team/arohan.png"], ["Aadithyaa G","team/aadhithyaa.png"], ["Arohan Mishra","team/arohan.png"], ["Aadithyaa G","team/aadhithyaa.png"], ["Arohan Mishra","team/arohan.png"], ["Aadithyaa G","team/aadhithyaa.png"], ["Arohan Mishra","team/arohan.png"]];
 
 
   // const members = image.allContentfulTeamMember.nodes
@@ -57,7 +55,7 @@ const AboutTeam = () => {
                 // post={member.post}
                 // regNo={member.regNo}
                 // branch={member.degree}
-                key={versi[0]}
+                key={versi[1]}
               />
             )
           })}

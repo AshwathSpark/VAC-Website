@@ -1,6 +1,7 @@
 import React from "react"
-// import Image from "gatsby-image"
-import Image from "react";
+import Image from "gatsby-image"
+// import image from "../../team/arohan.png";
+// import Image from "react";
 // import Ashwath from 'public/team/ashwath.png'
 
 const SingleMember = ({ image, name }) => {
@@ -12,7 +13,7 @@ const SingleMember = ({ image, name }) => {
         <h3>{name}</h3>
         <h3>{name}</h3>
       </div>
-      {/* <Image src={image} alt={name} fluid/> */}
+      {/* <Image fluid={image} alt={name} /> */}
       {/* <Image
   source={require({image})}
   style={{ width: 100, height: 100 }}
