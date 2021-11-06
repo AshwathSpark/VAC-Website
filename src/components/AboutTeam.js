@@ -14,63 +14,51 @@ import sandeep from "../team/sandeep.png"
 import vaishnavi from "../team/vaishnavi.png"
 import vishal from "../team/vishal.png"
 
-// arohan
-// aadhithyaa
-// ashwath
-// aviral
-// fatema
-// mukunth
-// prajjwal
-// ronit
-// sandeep
-// vaishnavi
-// vishal
-
 
 import SingleMember from "../components/subcomponents/SingleMember"
 gsap.registerPlugin(ScrollTrigger)
 
 const AboutTeam = () => {
-  useEffect(() => {
-    gsap.from(".member-card", {
-      scrollTrigger: ".member-card",
-      duration: 0.6,
-      autoAlpha: 0,
-      xPercent: -100,
-      rotate: -45,
-      stagger: 0.05,
-    })
-  }, [])
+  // useEffect(() => {
+  //   gsap.from(".member-card", {
+  //     scrollTrigger: ".member-card",
+  //     duration: 0.6,
+  //     autoAlpha: 0,
+  //     xPercent: -100,
+  //     rotate: -45,
+  //     stagger: 0.05,
+  //   })
+  // }, [])
 
-  const image = useStaticQuery(graphql`
-    query {
-      allContentfulTeamMember {
-        nodes {
-          name
-          memberImage {
-            fluid {
-              ...GatsbyContentfulFluid
-            }
-          }
-        }
-      }
-    }
-  `)
+  // const image = useStaticQuery(graphql`
+  //   query {
+  //     allContentfulTeamMember {
+  //       nodes {
+  //         name
+  //         memberImage {
+  //           fluid {
+  //             ...GatsbyContentfulFluid
+  //           }
+  //         }
+  //       }
+  //     }
+  //   }
+  // `)
 
   // const v1 = ["Ashwath","Arohan","Aadhithyaa"];
   // const v2 = ["team/ashwath.png","team/ashwath.png","team/ashwath.png"];
   const v3 = [
-    ["Arohan Mishra",arohan,"Computer Science and Engineering","19BCE0270"],
-    ["G Aadhithyaa",aadhithyaa,"CSE (Information Security)","19BCI0121"],
+    ["Arohan Mishra",arohan,"CSE Core","19BCE0270"],
+    ["G Aadhithyaa",aadhithyaa,"CSE Spec. Information Security","19BCI0121"],
     ["Vaishnavi Manambat Kaloor",vaishnavi,"Biotechnology Engineering","19BBT0024"],
-    ["Aviral Goyal",aviral,"Computer Science and Engineering","19BCE883"],
-    ["Fatema Malik",fatema,"Electronics and Communication Engineering","19BEC0662"],
-    ["Mukunth BS",mukunth,"Computer Science and Engineering","19BCE0625"],
-    ["Vishal R",vishal,"Computer Science and Engineering","19BCE0695"],
+    ["Aviral Goyal",aviral,"CSE Core","19BCE883"],
+    ["Fatema Malik",fatema,"ECE","19BEC0662"],
+    ["Mukunth BS",mukunth,"CSE Core","19BCE0625"],
+    ["Vishal R",vishal,"CSE Core","19BCE0695"],
     ["Sandeep Balaji J",sandeep,"Multimedia and animation","19BAM0013"],
     ["Ashwath P",ashwath,"Information Technology","19BIT0222"],
-    ["Ronit Sahu",ronit,"Computer Science and Engineering","19BCE0315"],
-    ["Prajjwal RT",prajjwal,"Electronics and Communication engineering","19BEC0470"],
+    ["Ronit Sahu",ronit,"CSE Core","19BCE0315"],
+    ["Prajjwal RT",prajjwal,"ECE","19BEC0470"],
 ];
 
 

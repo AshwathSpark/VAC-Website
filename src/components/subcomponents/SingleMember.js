@@ -1,5 +1,4 @@
 import React from "react"
-import Image from "gatsby-image"
 // import Image from "react";
 // import Ashwath from 'public/team/ashwath.png'
 

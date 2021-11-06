@@ -31,7 +31,7 @@ const Contact = () => {
                 <a
                   target="_blank"
                   rel="noreferrer"
-                  href="https://wa.me/917588356260"
+                  href="https://wa.me/918511488145"
                 >
                   <img src={Whatsapp} alt="VIT Animation Club" />
                 </a>
@@ -65,7 +65,7 @@ const Contact = () => {
           </div>
         </div>
 
-        <div className="copyright">© 2020 VIT Animation Club</div>
+        <div className="copyright">© 2021 VIT Animation Club</div>
       </div>
     </>
   )

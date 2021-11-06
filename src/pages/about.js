@@ -8,6 +8,7 @@ import Cursor from "../components/Cursor"
 import AboutHero from "../components/AboutHero"
 import AboutWork from "../components/AboutWork"
 import AboutTeam from "../components/AboutTeam"
+import AboutTeamOl from "../components/AboutTeamOl"
 import Faculty from "../components/Faculty"
 
 const About = () => {
@@ -39,6 +40,7 @@ const About = () => {
       <AboutWork />
       <Faculty />
       <AboutTeam />
+      <AboutTeamOl />
     </Layout>
   )
 }

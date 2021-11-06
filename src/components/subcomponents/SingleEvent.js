@@ -1,5 +1,5 @@
 import React from "react"
-import Image from "gatsby-image"
+// import Image from "gatsby-image"
 import image from "../../events/substance.jpeg";
 
 const SingleEvent = ({
