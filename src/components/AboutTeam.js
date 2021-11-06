@@ -36,25 +36,28 @@ const AboutTeam = () => {
     }
   `)
 
-  // const image = ["Ashwath","Arohan","aadhithyaa"];
+  // const v1 = ["Ashwath","Arohan","Aadhithyaa"];
+  // const v2 = ["team/ashwath.png","team/ashwath.png","team/ashwath.png"];
+  const v3 = [["Arohan Mishra","team/arohan.png"], ["Aadithyaa G","team/aadhithyaa.png"], ["Vaishnavi","team/vaishnavi.png"], ["Aadithyaa G","team/aadhithyaa.png"], ["Arohan Mishra","team/arohan.png"], ["Aadithyaa G","team/aadhithyaa.png"], ["Arohan Mishra","team/arohan.png"], ["Aadithyaa G","team/aadhithyaa.png"], ["Arohan Mishra","team/arohan.png"], ["Aadithyaa G","team/aadhithyaa.png"], ["Arohan Mishra","team/arohan.png"]];
 
-  const members = image.allContentfulTeamMember.nodes
-  members.reverse()
+
+  // const members = image.allContentfulTeamMember.nodes
+  // members.reverse()
 
   return (
     <div className="about-team">
       <div className="container">
         <h1 className="team-heading">Meet Our Team</h1>
         <div className="board-members">
-          {members.map(member => {
+          {v3.map(versi => {
             return (
               <SingleMember
-                image={member.memberImage.fluid}
-                name={member.name}
-                post={member.post}
-                regNo={member.regNo}
-                branch={member.degree}
-                key={member.name}
+                image={versi[1]}
+                name={versi[0]}
+                // post={member.post}
+                // regNo={member.regNo}
+                // branch={member.degree}
+                key={versi[0]}
               />
             )
           })}
