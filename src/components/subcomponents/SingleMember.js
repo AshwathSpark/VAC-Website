@@ -3,14 +3,14 @@ import Image from "gatsby-image"
 // import Image from "react";
 // import Ashwath from 'public/team/ashwath.png'
 
-const SingleMember = ({image, name }) => {
+const SingleMember = ({image, name, reg, branch }) => {
   return (
     <div className="member-card gray-scale " >
     {/* <h1>{image}</h1>   */}
       <div className="stud-info">
         {/* reg, branch */}
-        <h3>{name}</h3>
-        <h3>{name}</h3>
+        <h3>{reg}</h3>
+        <h3>{branch}</h3>
       </div>
       {/* <Image fluid={image} alt={name} /> */}
       {/* <Image
