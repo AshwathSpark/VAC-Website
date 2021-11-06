@@ -2,6 +2,7 @@ import React, { useEffect } from "react"
 import { gsap } from "gsap"
 import { ScrollTrigger } from "gsap/ScrollTrigger"
 import { useStaticQuery, graphql } from "gatsby"
+import aro from "../team/arohan.png"
 
 import SingleMember from "../components/subcomponents/SingleMember"
 gsap.registerPlugin(ScrollTrigger)
@@ -35,7 +36,7 @@ const AboutTeam = () => {
 
   // const v1 = ["Ashwath","Arohan","Aadhithyaa"];
   // const v2 = ["team/ashwath.png","team/ashwath.png","team/ashwath.png"];
-  const v3 = [["Arohan Mishra","../../team/arohan.png"], ["Aadithyaa G","../../team/aadhithyaa.png"]];
+  const v3 = [["Arohan Mishra",aro], ["Aadithyaa G","../../team/aadhithyaa.png"]];
   // , ["Vaishnavi","team/vaishnavi.png"], ["Aadithyaa G","team/aadhithyaa.png"], ["Arohan Mishra","team/arohan.png"], ["Aadithyaa G","team/aadhithyaa.png"], ["Arohan Mishra","team/arohan.png"], ["Aadithyaa G","team/aadhithyaa.png"], ["Arohan Mishra","team/arohan.png"], ["Aadithyaa G","team/aadhithyaa.png"], ["Arohan Mishra","team/arohan.png"]];
 
 

@@ -1,10 +1,9 @@
 import React from "react"
 import Image from "gatsby-image"
-// import image from "../../team/arohan.png";
 // import Image from "react";
 // import Ashwath from 'public/team/ashwath.png'
 
-const SingleMember = ({ image, name }) => {
+const SingleMember = ({image, name }) => {
   return (
     <div className="member-card gray-scale " >
     {/* <h1>{image}</h1>   */}
@@ -18,6 +17,7 @@ const SingleMember = ({ image, name }) => {
   source={require({image})}
   style={{ width: 100, height: 100 }}
 /> */}
+      {/* <img src={`../../team/${image}.png`} alt={name} style={{ width: "100%", height: "100%" }}/> */}
       <img src={image} alt={name} style={{ width: "100%", height: "100%" }}/>
       <div className="member-info">
         <h3>{name}</h3>
