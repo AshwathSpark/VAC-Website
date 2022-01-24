@@ -56,7 +56,7 @@ const AboutTeam = () => {
     ["Mukunth BS",mukunth,"CSE Core","19BCE0625"],
     ["Vishal R",vishal,"CSE Core","19BCE0695"],
     ["Sandeep Balaji J",sandeep,"Multimedia and animation","19BAM0013"],
-    ["Ashwath Padmanaban",ashwath,"Information Technology","19BIT0222"],
+    ["Ashwath P",ashwath,"Information Technology","19BIT0222"],
     ["Ronit Sahu",ronit,"CSE Core","19BCE0315"],
     ["Prajjwal RT",prajjwal,"ECE","19BEC0470"],
 ];
